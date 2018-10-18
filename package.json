@@ -1,0 +1,19 @@
+{
+  "name": "YouTV",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "pnsrc",
+  "license": "MIT",
+  "ico": "icon.ico",
+  "scripts": {
+    "start": "electron .",
+	"build": "electron-packager c:/application YouTV --platforms=win32 --arch=x64 --app_version=0.0.1 --out=dist --icon=icon.ico"
+  },
+  "devDependencies": {
+    "electron": "^3.0.4",
+    "electron-packager": "^12.2.0"
+  },
+  "windows": {
+    "toolbar": false
+  }
+}
