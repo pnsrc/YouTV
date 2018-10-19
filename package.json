@@ -1,19 +1,20 @@
 {
   "name": "YouTV",
-  "version": "0.0.1",
-  "main": "index.js",
-  "author": "pnsrc",
-  "license": "MIT",
-  "ico": "icon.ico",
+  "version": "1.0.0",
+  "description": "YouTube TV client for desktop pc based on Electron.JS",
+  "main": "main.js",
   "scripts": {
     "start": "electron .",
-	"build": "electron-packager c:/application YouTV --platforms=win32 --arch=x64 --app_version=0.0.1 --out=dist --icon=icon.ico"
+    "build": "electron-packager c:/electron Test --platforms=win32 --arch=x64 --app_version=1.0.0 --out=out"
   },
+  "author": "Alexey Alenich",
+  "license": "ISC",
   "devDependencies": {
     "electron": "^3.0.4",
-    "electron-packager": "^12.2.0"
+    "electron-package": "^0.1.0",
+    "render": "^0.1.4"
   },
-  "windows": {
-    "toolbar": false
+  "dependencies": {
+    "update-electron-app": "^1.3.0"
   }
 }
